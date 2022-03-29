@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    align-items: center;
+}
+
+.header a{
+    margin: 20px;
+    color: rgba(0, 0, 0, .87);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    text-decoration: inherit;
+}
+
+.header a:hover{
+    text-decoration: underline;
+}
+
+.header_right{
+    display: flex;
+    margin-right: 0.1px;
+    align-items: center;
+    min-width: 13vw;
+    justify-content: space-between;
+}
+
+.header_right .header_apps{
+    margin-right: 0.1px;
+    
+}
+
+.mainbody{
+    flex: 1;
+    display: flex;
+    margin-top: 12%;
+    flex-direction: column;
+}
+
+.mainbody img{
+    object-fit: contain;
+    height: 100px;
+}
+
+.search_input{
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgrey;
+    height: 30px;
+    padding: 10px 20px;
+    border-radius: 999px;
+    width: 75vw;
+    margin: 0 auto;
+    margin-top: 40px;
+    max-width: 560px;
+}
+
+.search_input input{
+    flex: 1;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+}
+
+.search_input .material-icons{
+  color: gray;
+}
+.search_button{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.search_button button{
+    margin: 5px;
+    padding: 10px 15px;
+    background-color:rgb(250, 249, 248);
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+footer{
+    background: #f2f2f2;
+}
+
+footer h4{
+    color: rgba(0, 0, 0, .54);
+    font-size: 15px;
+    line-height: 30.5px;
+    font-weight: 500;
+    padding-left: 29px;
+    border: 1px solid #eee;
+}
+
+footer a{
+    line-height: 30.5px;
+    color: #5f6368;
+    display: inline-block;
+    padding: 12px 11.3 px;
+    font-size: 15px;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+.links{
+    
+    border-top: 1px solid #ddd;
+    display: flex;
+}
+
+.left{
+    padding-left:  27.7px ;
+    flex: auto;
+}
+
+.right{
+    padding: right 170px ;
+    
+}
