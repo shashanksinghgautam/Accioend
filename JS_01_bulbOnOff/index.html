@@ -1,0 +1,112 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb-On-Off</title>
+    </head>
+ 
+<body>
+    <style>
+        #upper{
+            display: block;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            bottom: 100px;
+            height:46.6%;
+            width: 99%; 
+            background-color: rgb(73, 197, 135);
+            text-align: center;
+            border: 55px solid rgb(179, 82, 17);
+            border-width: 10px;
+            border-style: groove;
+        }
+
+        #lower{
+            display: block;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            height: 49%;
+            width: 99%;
+            background-color: rgb(91, 32, 146);
+            text-align: center;
+            border: 55px solid rgb(179, 82, 17);
+            border-width: 10px;
+            border-style: groove;
+        }
+        #button{
+            width: 180px;
+            height: 50px;
+            background-color: rgb(202, 235, 17);
+            border-radius: 8px;
+            color: rgb(170, 30, 30);
+            font-size: 15px;
+            font-weight: bold;
+        }
+        #button:hover{
+            color: blue;
+            background-color: rgb(233, 69, 159);
+            cursor: pointer;
+        }
+        #button2{
+            width: 180px;
+            height: 50px;
+            background-color: rgb(202, 235, 17);
+            border-radius: 8px;
+            color: rgb(170, 30, 30);
+            font-size: 15px;
+            font-weight: bold;
+        }
+        #button2:hover{
+            color: blue;
+            background-color: rgb(233, 69, 159);
+            cursor: pointer;
+        }
+        #bulbimg, #bulbimg2{
+            margin-top: 20px;
+            height: 300px;
+
+        }
+
+    </style>
+  
+   <div id="upper">
+        <img id= "bulbimg" src="https://www.w3schools.com/js/pic_bulboff.gif">
+        <br><br><br>
+        <button id="button" onclick="onFun()">TURN ON</button>
+        <button id="button" onclick="offFun()">TURN OFF</button>
+   </div>
+   <br>
+   <div id="lower">
+        <img id= "bulbimg2" src="https://www.w3schools.com/js/pic_bulboff.gif">
+        <br><br><br>
+        <button id="button2" onclick="onOff()">TURN ON</button>
+    </div>
+    </body>
+    <script>
+
+    
+        function onFun(){
+            document.getElementById("bulbimg").src = "https://www.w3schools.com/js/pic_bulbon.gif"
+        }
+
+        function offFun(){
+            document.getElementById("bulbimg").src = "https://www.w3schools.com/js/pic_bulboff.gif" 
+        }
+
+        var bulbStatus = true;
+        function onOff() {
+            if(!bulbStatus){
+                document.getElementById("bulbimg2").src = "https://www.w3schools.com/js/pic_bulboff.gif" 
+                document.getElementById("button2").innerHTML="TURN ON"
+            }
+            else {
+                document.getElementById("bulbimg2").src = "https://www.w3schools.com/js/pic_bulbon.gif"
+                document.getElementById("button2").innerHTML="TURN OFF"
+            }
+            bulbStatus = !bulbStatus;
+        }
+    </script>
+</html>
