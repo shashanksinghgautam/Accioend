@@ -1,5 +1,4 @@
 
-
 table{
         background-color: lightsalmon;
         border: 10px solid ;
@@ -54,10 +53,11 @@ td input{
         border-right: 50px;
         width: 300px;
         height: 40px;
-        position: absolute;
-        top: 76%;
+        position: relative;
+        top: 7%;
         left: 50%;
-        -ms-transform: translate(-50%, -50%);
+        /* -ms-transform: translate(-50%, -50%); */
+        margin-top: 750px;
         transform: translate(-50%, -50%);
         cursor: pointer;
 }
