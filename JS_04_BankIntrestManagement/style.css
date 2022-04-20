@@ -1,4 +1,5 @@
 
+
 table{
         background-color: lightsalmon;
         border: 10px solid ;
@@ -6,9 +7,11 @@ table{
         border-style: initial;
         border-radius: 20px;
         border-color: purple;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 240px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
         border-collapse: separate;
         border-spacing: 9px 15px;
 }
@@ -40,6 +43,7 @@ td input{
 }
 
 .btn{
+        margin: 10px;
         background-color: cadetblue;
         border-radius: 20px;
         color: ghostwhite;
@@ -50,7 +54,6 @@ td input{
         border-right: 50px;
         width: 300px;
         height: 40px;
-        margin-top: 70px;
         position: absolute;
         top: 76%;
         left: 50%;
