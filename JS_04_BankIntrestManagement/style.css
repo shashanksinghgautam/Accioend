@@ -7,7 +7,7 @@ table{
         border-radius: 20px;
         border-color: purple;
         position: absolute;
-        top: 50%;
+        top: 35%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
@@ -53,12 +53,11 @@ td input{
         border-right: 50px;
         width: 300px;
         height: 40px;
-        position: relative;
-        top: 7%;
+        position: absolute;
+        top: 70%;
         left: 50%;
-        /* -ms-transform: translate(-50%, -50%); */
-        margin-top: 750px;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%,-50%);
+        text-align: center;
         cursor: pointer;
 }
 
