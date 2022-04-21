@@ -1,4 +1,7 @@
 
+body{
+        overflow: hidden hidden;
+}
 table{
         background-color: lightsalmon;
         border: 10px solid ;
